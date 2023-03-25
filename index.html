@@ -8,90 +8,112 @@
 	<meta name="description" content="Pagina Web Blog de Cafe">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<div>
+<body class="no-margin centrarTexto">
+
+	<header class="header">
+
+		<div class="navegabg">
+
+			<!-- Enlace a la página "Quiénes somos" -->
+			<nav class="navega">
+					
+				<a class="navega__link" href="quienes_somos.html">Quiénes somos </a>
+				<a class="navega__link" href="principales_exitos.html">Principales éxitos</a>
+				<a class="navega__link" href="contacto.html">Contacto</a>
+					
+			</nav>
+
+		</div>
+		
 		<!-- Enlace a la página de inicio (Home) -->
-		<h1 class="title"><a class="title__link" href="index.html">AC/DC Music</a></h1>
+		<h1 class="header__text"><a class="header__text--link" href="index.html">AC/DC Music</a></h1>
 
-		<!-- Enlace a la página "Quiénes somos" -->
-		<nav class="navega">
-			<ul>
-				<li><a class="navega__link" href="quienes_somos.html">Quiénes somos </a></li>
-				<li><a class="navega__link" href="principales_exitos.html">Principales éxitos</a></li>
-				<li><a class="navega__link" href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+	</header>
 
+	
+
+	<main class="contenedor">
+
+		
 		<!-- Contenido de la página de inicio (Home) -->
 		<h2 class="subtitle">Bienvenidos al sitio web de AC/DC</h2>
 		<p class="subtitle__desc">¡Descubre más sobre nosotros y nuestra música!</p>
 		
-	</div>
 
+		<div class="article">
 
+			<!-- Contenido de la página "Principales éxitos" -->
+			<h2 class="subtitle">Un poco de nosotros</h2>
 
-	<!-- Contenido de la página "Principales éxitos" -->
-	<h2 class="subtitle">Un poco de nosotros</h2>
-
-	<article class="subtitle__desc">Suspendisse in purus tristique sapien porttitor hendrerit eu vel tellus. 
-		Pellentesque sed nunc malesuada, dapibus metus at, viverra odio. Sed convallis, 
-		elit et commodo aliquet, magna magna dignissim neque, in tincidunt ex augue vel nunc. 
-		In molestie tempor dictum. Nulla lobortis odio sed viverra viverra. Nam felis tellus, 
-		volutpat id nisi a, accumsan venenatis neque. Suspendisse interdum molestie vehicula. 
-		Aenean in purus sodales, bibendum leo in, ultrices arcu. Nunc sed nulla ut nisi 
-		accumsan cursus. Nullam sed mi vel quam rhoncus sagittis. Praesent a varius nisl, 
-		in viverra leo. Fusce vestibulum at orci quis egestas. Suspendisse placerat nunc at 
-		feugiat ultrices. Phasellus nec dignissim urna. Duis ligula mauris, cursus nec nulla 
-		sagittis, vulputate malesuada nibh.
-	</article>
-
-	<h2>Nuestra Banda</h2>
-
-	<section class="contenedor">
-		<div class="contenedor__opc">
-			
-			<h3>Angous Young</h3>   
-			<img src="../Img/A-273544-1611962711-8768.jpg" alt="Angous Young">
-			<p>hola</p>
-
-		</div>
-		
-		<div class="contenedor__opc">
-			
-			<h3>Stevie Young</h3>   
-			<img src="../Img/Malcolm Young.jpg" alt="Angous Young">
+			<article class="subtitle__desc">Suspendisse in purus tristique sapien porttitor hendrerit eu vel tellus. 
+				Pellentesque sed nunc malesuada, dapibus metus at, viverra odio. Sed convallis, 
+				elit et commodo aliquet, magna magna dignissim neque, in tincidunt ex augue vel nunc. 
+				In molestie tempor dictum. Nulla lobortis odio sed viverra viverra. Nam felis tellus, 
+				volutpat id nisi a, accumsan venenatis neque. Suspendisse interdum molestie vehicula. 
+				Aenean in purus sodales, bibendum leo in, ultrices arcu. Nunc sed nulla ut nisi 
+				accumsan cursus. Nullam sed mi vel quam rhoncus sagittis. Praesent a varius nisl, 
+				in viverra leo. Fusce vestibulum at orci quis egestas. Suspendisse placerat nunc at 
+				feugiat ultrices. Phasellus nec dignissim urna. Duis ligula mauris, cursus nec nulla 
+				sagittis, vulputate malesuada nibh.
+			</article>
 
 		</div>
 
-		<div class="contenedor__opc">
-			
-			<h3>Brian Johnson</h3>   
-			<img src="../Img/Brian.jpg" alt="Angous Young">
-
-		</div>
-
-		<div class="contenedor__opc">
-			
-			<h3>Cliff Williams</h3>   
-			<img src="../Img/images.jpg" alt="Angous Young">
-
-		</div>
-
-		<div class="contenedor__opc">
-			
-			<h3>Phil Rudd</h3>   
-			<img src="../Img/philruddpromo2014_638.jpg" alt="Angous Young">
-
-		</div>
 		
 
-		<p>¡Esperamos que te gusten!</p>
+		<section class="">
 
-	</section>
+			<h2>Nuestra Banda</h2>
 
-	<footer>
+			<div class="contenedor__fichas">
+
+				<div class="contenedor__opc">
+					
+					<h3>Angous Young</h3>   
+					<img src="../Img/A-273544-1611962711-8768.jpg" alt="Angous Young">
+					<p>hola</p>
+
+				</div>
+				
+				<div class="contenedor__opc">
+					
+					<h3>Stevie Young</h3>   
+					<img src="../Img/Malcolm Young.jpg" alt="Angous Young">
+
+				</div>
+
+				<div class="contenedor__opc">
+					
+					<h3>Brian Johnson</h3>   
+					<img src="../Img/Brian.jpg" alt="Angous Young">
+
+				</div>
+
+				<div class="contenedor__opc">
+					
+					<h3>Cliff Williams</h3>   
+					<img src="../Img/images.jpg" alt="Angous Young">
+
+				</div>
+
+				<div class="contenedor__opc">
+					
+					<h3>Phil Rudd</h3>   
+					<img src="../Img/philruddpromo2014_638.jpg" alt="Angous Young">
+
+				</div>
+
+			</div>
+
+			<p>¡Esperamos que te gusten!</p>
+
+		</section>
+
+	</main>
+
+	<footer class="contenedor">
 		<a  href="index.html">
-			<h2>AC/DC<span >The Best Rock</span></h2>
+			<h1 class="header__text"><a class="header__text--link" href="index.html">AC/DC Music</a></h1>
 		</a>
 	</footer>
 	
