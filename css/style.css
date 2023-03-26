@@ -41,6 +41,7 @@ footer{
 
 h1, h2, h3, h4 {
     line-height: 1.2;
+    font-family: "Pwrup-Regular";
 }
 
 h1{
@@ -49,6 +50,7 @@ h1{
 
 h2{
     font-size: 4rem;
+    
 }
 
 h3{
@@ -105,9 +107,7 @@ img{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    
     background-color: var(--secundario);
-
 }
 
 .navega__link{
@@ -117,11 +117,13 @@ img{
     font-size: 2rem;
     font-weight: 700;
     padding: 1.2rem;
+    font-family: "Pwrup-Regular";
 }
 
 .navega__link:hover {
     background-color: var(--primario);
     color: var(--secundario);
+    border-radius: 5%;
 }
 
 /*Article*/
@@ -184,5 +186,75 @@ img{
 .footer__text--link{
     text-decoration: none;
     color: var(--primario);
+}
+
+/* Header */
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.nav {
+   font-family: Impact, fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(70, 57, 57);
+  border-right: 3px solid rgb(19, 15, 15);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(19, 15, 15);
+  border-left: 3px solid  rgb(70, 57, 57);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: black;
 }
 

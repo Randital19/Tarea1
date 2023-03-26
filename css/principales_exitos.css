@@ -1,0 +1,147 @@
+.cabeceraPEx{
+    background-image: url(../Img/acdc-ac-dc-rock-wallpaper-preview.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 22em;
+    background-position: bottom;
+}
+
+.cabeceraFooter{
+    background-image: url(../Img/acdc-ac-dc-rock-wallpaper-preview.jpg);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+    padding: 5em;
+}
+
+.tituloPEx {
+    font-family: Impact, fantasy;
+    color: red;
+    text-align: center;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.parrafo{
+  font-family: Impact, fantasy;
+    color: red;
+    text-align: center;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.parrafoFooter{
+    font-family: Impact, fantasy;
+    color: red;
+    text-align: center;
+    padding-top: 11em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    
+}
+
+.imagenFondo{
+    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700321993.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.main{
+    text-align: center;
+    color: aliceblue;
+    font-family: Impact, fantasy;
+    font-size: 35px;
+}
+
+
+iframe:hover{
+    
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 10px 10px 30px 20px #000000; 
+
+}
+
+iframe{
+  transition: 1s ease;
+}
+
+/* Header */
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.nav {
+   font-family: Impact, fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(219, 78, 78);
+  border-right: 3px solid rgb(130, 8, 8);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(130, 8, 8);
+  border-left: 3px solid  rgb(219, 78, 78);
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: red;
+}

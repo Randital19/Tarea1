@@ -1,0 +1,149 @@
+:root{
+    --primario: #f10606;
+    --secundario: #000000;
+    --gris: hsl(0, 1%, 64%);
+    --blanco: #f5f5f5;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* , *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+/*Globales*/
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+*{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    margin-top: 2rem;
+    border-radius: 3%;
+    max-width: 100%;
+}
+
+/*Header*/
+
+.header{
+
+    background-image: url(/img/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60rem;
+    
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: var(--secundario);
+}
+
+.navegacion__link{
+    color: var(--primario);
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.2rem;
+}
+
+.navegacion__link:hover {
+    background-color: var(--primario);
+    color: var(--secundario);
+}
+
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(77,77,77,0.68);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(77,77,77,0.68);
+    box-shadow: 0px 5px 15px 0px rgba(77,77,77,0.68);
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;/*Agrega un borde redondo*/
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: -5rem;
+}
+
+.texto{
+    margin: 0;
+    text-align: center;
+}
+
+.footer{
+    text-decoration: none;
+    margin-top: 3rem;
+    color: var(--primario);
+    background-color: var(--secundario);
+    justify-content: space-between;
+}
+
+.footer__logo{
+    padding: 1rem;
+    margin-right: 30rem;
+}
+
+.socialnav{
+    margin-left: 30rem;
+}
+
+.navegacionsocial{
+    display: block;
+    text-align: center;
+}
+
+.navegacionsocial__link{
+    color: var(--primario);
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem;
+}
